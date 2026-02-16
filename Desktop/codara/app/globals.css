@@ -2513,3 +2513,32 @@ body {
         border-radius: 0 !important;
     }
 }
+
+/* Fix project section excessive height and About page top spacing */
+@media (max-width: 768px) {
+    /* Reduce projects section padding to eliminate long black space */
+    .projects-section {
+        padding: 60px 30px 40px !important;
+    }
+
+    .projects-image-container {
+        display: none !important;
+    }
+
+    /* Add top margin to About page hero section */
+    .about-hero {
+        margin-top: 80px !important;
+        padding-top: 40px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 50px 20px 30px !important;
+    }
+
+    .about-hero {
+        margin-top: 70px !important;
+        padding-top: 30px !important;
+    }
+}
