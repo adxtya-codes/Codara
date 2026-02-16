@@ -2506,3 +2506,10 @@ body {
         font-size: 15px !important;
     }
 }
+
+/* Remove projects section bottom border on mobile */
+@media (max-width: 768px) {
+    .projects-section {
+        border-radius: 0 !important;
+    }
+}
