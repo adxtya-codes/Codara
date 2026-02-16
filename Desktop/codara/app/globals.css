@@ -2350,3 +2350,61 @@ body {
         border-radius: 16px !important;
     }
 }
+
+/* Additional comprehensive mobile fixes for alignment */
+@media (max-width: 480px) {
+
+    /* Hero section comprehensive fixes */
+    .hero {
+        padding: 100px 20px 60px !important;
+        min-height: auto !important;
+    }
+
+    .hero-container {
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .hero-content {
+        max-width: 100% !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .hero-headline {
+        font-size: 42px !important;
+        line-height: 1.1 !important;
+        margin-bottom: 24px !important;
+        text-align: left !important;
+        width: 100% !important;
+    }
+
+    .headline-line {
+        display: block !important;
+        text-align: left !important;
+    }
+
+    .hero-description {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 32px !important;
+        text-align: left !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .cta-button {
+        display: inline-block !important;
+        padding: 22px 40px !important;
+        font-size: 16px !important;
+        text-align: center !important;
+        width: auto !important;
+        margin: 0 !important;
+        border-radius: 50px !important;
+        line-height: 1.4 !important;
+    }
+
+    .hero-image {
+        display: none !important;
+    }
+}
