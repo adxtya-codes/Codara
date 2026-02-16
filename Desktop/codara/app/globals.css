@@ -2451,3 +2451,58 @@ body {
         border-radius: 20px !important;
     }
 }
+
+/* ===================================
+   COMPREHENSIVE MOBILE FIXES
+   =================================== */
+
+/* Fix projects section large border radius on mobile */
+@media (max-width: 768px) {
+    .projects-section {
+        border-radius: 0 0 24px 24px !important;
+    }
+
+    .projects-image-container,
+    .project-image-wrapper,
+    .project-image,
+    .project-image-left,
+    .project-image-right {
+        border-radius: 20px !important;
+    }
+
+    /* Fix About page team section */
+    .team-headline {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+        word-break: keep-all !important;
+    }
+
+    .team-description {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        border-radius: 0 0 20px 20px !important;
+    }
+
+    .projects-image-container,
+    .project-image-wrapper,
+    .project-image,
+    .project-image-left,
+    .project-image-right {
+        border-radius: 16px !important;
+    }
+
+    /* About page team section for small mobile */
+    .team-headline {
+        font-size: 28px !important;
+        line-height: 1.3 !important;
+    }
+
+    .team-description {
+        font-size: 15px !important;
+    }
+}
