@@ -2542,3 +2542,16 @@ body {
         padding-top: 30px !important;
     }
 }
+
+/* Update projects section border radius - smaller rounded corners */
+@media (max-width: 768px) {
+    .projects-section {
+        border-radius: 0 0 24px 24px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        border-radius: 0 0 20px 20px !important;
+    }
+}
