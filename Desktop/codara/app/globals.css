@@ -2268,11 +2268,13 @@ body {
         font-size: 12px;
     }
 }
+
 /* ===================================
    SPECIFIC MOBILE FIXES
    =================================== */
 
 @media (max-width: 768px) {
+
     /* Fix header alignment */
     .header {
         position: fixed;
