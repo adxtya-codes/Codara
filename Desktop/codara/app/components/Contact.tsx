@@ -24,7 +24,7 @@ export default function Contact() {
 
                         <div className="contact-info">
                             <a href="tel:+918810202799" className="contact-phone">+91 88102 02799</a>
-                            <a href="mailto:[EMAIL_ADDRESS]" className="contact-email">[EMAIL_ADDRESS]</a>
+                            <a href="mailto:teamcodara@gmail.com" className="contact-email">teamcodara@gmail.com</a>
                         </div>
                     </div>
                 </div>

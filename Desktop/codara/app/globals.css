@@ -692,7 +692,7 @@ body {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     flex: 1;
 }
@@ -721,6 +721,21 @@ body {
 
 .footer-column a:hover {
     color: #ffffff;
+}
+
+.footer-contact-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.footer-contact-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .footer-column p {
@@ -1630,5 +1645,631 @@ body {
     .steps-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+}/* ===================================
+   MOBILE RESPONSIVE STYLES
+   =================================== */
+
+/* Tablet and below (1024px) */
+@media (max-width: 1024px) {
+    .hero-headline {
+        font-size: 72px;
+    }
+
+    .projects-headline {
+        font-size: 40px;
+    }
+
+    .project-item h3 {
+        font-size: 48px;
+    }
+
+    .about-hero-headline {
+        font-size: 72px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        padding: 20px 30px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 100px 30px 80px;
+        min-height: auto;
+    }
+
+    .hero-headline {
+        font-size: 48px;
+        letter-spacing: -2px;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .hero-illustration {
+        max-width: 300px;
+    }
+
+    /* Services Section */
+    .services-section {
+        padding: 80px 30px;
+    }
+
+    .services-intro {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .services-illustration {
+        max-width: 200px;
+    }
+
+    .services-headline {
+        font-size: 32px;
+    }
+
+    .service-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 40px;
+        border-radius: 40px;
+    }
+
+    .service-title {
+        font-size: 24px;
+    }
+
+    .service-arrow {
+        align-self: flex-end;
+    }
+
+    /* Projects Section */
+    .projects-section {
+        padding: 60px 30px 80px;
+    }
+
+    .projects-label {
+        font-size: 12px;
+    }
+
+    .projects-headline {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .projects-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .projects-list {
+        max-width: 100%;
+    }
+
+    .project-item {
+        padding: 20px 0;
+    }
+
+    .project-item h3 {
+        font-size: 36px;
+    }
+
+    .projects-image-container {
+        min-height: 300px;
+    }
+
+    .project-dual-images {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .project-image-left,
+    .project-image-right {
+        max-width: 100%;
+        min-height: 250px;
+    }
+
+    /* Process Steps */
+    .process-steps {
+        padding: 100px 30px 80px;
+    }
+
+    .process-label {
+        font-size: 12px;
+    }
+
+    .process-headline {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .step-card {
+        padding: 30px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        padding: 70px 30px 50px;
+    }
+
+    .testimonials-label {
+        font-size: 12px;
+    }
+
+    .testimonials-headline {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 30px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .testimonial-info h4 {
+        font-size: 15px;
+    }
+
+    .testimonial-info p {
+        font-size: 12px;
+    }
+
+    .testimonial-location {
+        font-size: 11px;
+    }
+
+    .testimonial-text {
+        font-size: 13px;
+    }
+
+    .testimonial-more {
+        min-height: 150px;
+    }
+
+    .testimonial-more-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .testimonial-more h4 {
+        font-size: 16px;
+    }
+
+    .testimonial-more p {
+        font-size: 12px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        padding: 70px 30px;
+    }
+
+    .faq-label {
+        font-size: 12px;
+    }
+
+    .faq-headline {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .faq-card {
+        padding: 25px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    /* About Page - Hero */
+    .about-hero {
+        padding: 80px 30px 60px;
+        min-height: auto;
+    }
+
+    .about-hero-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-hero-headline {
+        font-size: 48px;
+    }
+
+    .about-hero-description {
+        font-size: 16px;
+    }
+
+    .about-hero-illustration {
+        max-width: 250px;
+    }
+
+    /* Team Section */
+    .team-section {
+        padding: 70px 30px;
+    }
+
+    .team-headline {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .team-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .team-image-wrapper {
+        height: 300px;
+    }
+
+    .team-name {
+        font-size: 20px;
+        padding: 20px 20px 6px;
+    }
+
+    .team-role {
+        font-size: 12px;
+        padding: 0 20px 10px;
+    }
+
+    .team-member-description {
+        font-size: 14px;
+        padding: 0 20px 16px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 70px 30px;
+    }
+
+    .contact-headline {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .contact-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .contact-whatsapp-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 18px 32px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-phone,
+    .contact-email {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 30px 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-brand h3 {
+        font-size: 24px;
+    }
+
+    .footer-brand p {
+        font-size: 14px;
+    }
+
+    .footer-cta {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-column h4 {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .footer-column a {
+        font-size: 13px;
+    }
+
+    .footer-contact-label {
+        font-size: 11px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+
+    /* Header */
+    .header {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 80px 20px 60px;
+    }
+
+    .hero-headline {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-illustration {
+        max-width: 250px;
+    }
+
+    /* Services */
+    .services-section {
+        padding: 60px 20px;
+    }
+
+    .services-headline {
+        font-size: 28px;
+    }
+
+    .service-card {
+        padding: 25px 30px;
+    }
+
+    .service-title {
+        font-size: 20px;
+    }
+
+    .service-description {
+        font-size: 13px;
+    }
+
+    /* Projects */
+    .projects-section {
+        padding: 50px 20px 60px;
+    }
+
+    .projects-headline {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .project-item h3 {
+        font-size: 28px;
+    }
+
+    .projects-image-container {
+        min-height: 250px;
+    }
+
+    /* Process Steps */
+    .process-steps {
+        padding: 80px 20px 60px;
+    }
+
+    .process-headline {
+        font-size: 28px;
+    }
+
+    .step-card {
+        padding: 25px;
+    }
+
+    .step-number {
+        font-size: 36px;
+    }
+
+    .step-title {
+        font-size: 20px;
+    }
+
+    .step-description {
+        font-size: 14px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        padding: 60px 20px 40px;
+    }
+
+    .testimonials-headline {
+        font-size: 28px;
+    }
+
+    .testimonial-card {
+        padding: 18px;
+    }
+
+    /* FAQ */
+    .faq-section {
+        padding: 60px 20px;
+    }
+
+    .faq-headline {
+        font-size: 28px;
+    }
+
+    .faq-card {
+        padding: 20px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+    }
+
+    /* About Page */
+    .about-hero {
+        padding: 60px 20px 50px;
+    }
+
+    .about-hero-headline {
+        font-size: 36px;
+    }
+
+    .about-hero-description {
+        font-size: 15px;
+    }
+
+    /* Team */
+    .team-section {
+        padding: 60px 20px;
+    }
+
+    .team-headline {
+        font-size: 24px;
+    }
+
+    .team-description {
+        font-size: 15px;
+    }
+
+    .team-image-wrapper {
+        height: 280px;
+    }
+
+    /* Contact */
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .contact-headline {
+        font-size: 28px;
+    }
+
+    .contact-description {
+        font-size: 15px;
+    }
+
+    .contact-whatsapp-btn {
+        padding: 16px 28px;
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 20px 25px;
+    }
+
+    .footer-brand h3 {
+        font-size: 22px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    .footer-cta {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+
+    .footer-column h4 {
+        font-size: 12px;
+    }
+
+    .footer-column a {
+        font-size: 12px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
     }
 }
