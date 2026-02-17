@@ -4823,3 +4823,21 @@ body {
 .services-section .service-description {
     font-size: 14px !important; /* Reverted from 16px */
 }
+
+/* FIX SERVICES PILLS - BIGGER TEXT */
+
+.services-section .service-title {
+    font-size: 32px !important; /* Increased from 20px */
+    margin-bottom: 12px !important;
+    line-height: 1.2 !important;
+}
+
+.services-section .service-description {
+    font-size: 18px !important; /* Increased from 14px */
+    line-height: 1.6 !important;
+}
+
+/* Ensure padding accommodates larger text comfortably */
+.services-section .service-card {
+    padding: 32px 56px !important; 
+}
