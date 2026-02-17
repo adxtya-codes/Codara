@@ -4590,3 +4590,62 @@ body {
         padding: 20px 32px !important;
     }
 }
+
+/* FIX: Services Pills - LONG HORIZONTAL CAPSULES */
+.services-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+}
+
+.services-section .service-card {
+    background: white !important;
+    border: none !important;
+    border-radius: 60px !important;
+    padding: 28px 48px !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    width: 100% !important;
+    min-height: 100px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.services-section .service-card:hover {
+    background: rgba(255,255,255,0.95) !important;
+    transform: translateX(8px) !important;
+    box-shadow: 0 8px 32px rgba(255,255,255,0.3) !important;
+}
+
+.services-section .service-content {
+    display: block !important;
+    width: 100% !important;
+}
+
+.services-section .service-title {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    color: #000000 !important;
+    display: block !important;
+}
+
+.services-section .service-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #666666 !important;
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        max-width: 100% !important;
+    }
+    
+    .services-section .service-card {
+        padding: 24px 32px !important;
+        border-radius: 40px !important;
+    }
+}
