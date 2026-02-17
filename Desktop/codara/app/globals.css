@@ -2961,3 +2961,49 @@ body {
         bottom: -3px;
     }
 }
+
+/* Update codara logo - sequential color change (one letter at a time) */
+@keyframes colorChangeSequential {
+    0%, 16.66% {
+        color: white;
+    }
+    20% {
+        color: #888888;
+    }
+    23.33% {
+        color: white;
+    }
+    100% {
+        color: white;
+    }
+}
+
+.wave-letter {
+    display: inline-block;
+    animation: colorChangeSequential 6s ease-in-out infinite !important;
+    transform: none !important;
+}
+
+.wave-letter:nth-child(1) {
+    animation-delay: 0s !important;
+}
+
+.wave-letter:nth-child(2) {
+    animation-delay: 1s !important;
+}
+
+.wave-letter:nth-child(3) {
+    animation-delay: 2s !important;
+}
+
+.wave-letter:nth-child(4) {
+    animation-delay: 3s !important;
+}
+
+.wave-letter:nth-child(5) {
+    animation-delay: 4s !important;
+}
+
+.wave-letter:nth-child(6) {
+    animation-delay: 5s !important;
+}
