@@ -5005,3 +5005,30 @@ body {
         padding-right: 10px !important; /* Prevent right edge cutoff too */
     }
 }
+
+/* FIX MOBILE HERO TEXT ALIGNMENT - CENTERED AND SAFE */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 0 30px !important; /* Increase safety padding */
+        text-align: center !important; /* Center the text container */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .hero-headline {
+        margin-left: auto !important; /* Auto margins to center block elements */
+        margin-right: auto !important;
+        text-align: center !important; /* Center text inside */
+        width: 100% !important;
+        padding: 0 !important; /* Remove internal padding that might cause offset */
+        font-size: 42px !important; /* Slightly reduce size to prevent overflow if word is long */
+    }
+    
+    /* Ensure content wrapper is full width but centered */
+    .hero-content {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+}
