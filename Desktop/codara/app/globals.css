@@ -4841,3 +4841,19 @@ body {
 .services-section .service-card {
     padding: 32px 56px !important; 
 }
+
+/* FIX SERVICES PILLS - FORCE PERFECT CAPSULE SHAPE */
+.services-section .service-card {
+    border-radius: 9999px !important; /* Forces perfect semicircular ends */
+    padding: 30px 60px !important; /* Balanced padding */
+}
+
+/* Ensure text sizes remain large as requested */
+.services-section .service-title {
+    font-size: 28px !important; /* Slightly adjusted to fit better */
+    margin-bottom: 8px !important;
+}
+
+.services-section .service-description {
+    font-size: 16px !important; /* Slightly adjusted */
+}
