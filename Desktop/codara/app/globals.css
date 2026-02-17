@@ -3860,3 +3860,54 @@ body {
 .main-cta-button:hover {
     box-shadow: 0 6px 20px rgba(255,255,255,0.3);
 }
+
+/* Restore Original Step Number Styling */
+.step-number {
+    background: white !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+/* Smooth FAQ Accordion Transitions */
+.faq-item {
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #666666;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.faq-answer.open {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 16px;
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-icon.open {
+    transform: rotate(180deg);
+}

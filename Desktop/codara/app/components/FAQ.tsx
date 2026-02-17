@@ -48,26 +48,26 @@ export default function FAQ() {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={`faq-card ${openIndex === index ? 'open' : ''}`}
-                            onClick={() => toggleFAQ(index)}
+                            className="faq-item"
                         >
-                            <div className="faq-question">
+                            <div
+                                className="faq-question"
+                                onClick={() => toggleFAQ(index)}
+                            >
                                 <h3>{faq.question}</h3>
                                 <svg
-                                    className="faq-icon"
+                                    className={`faq-icon ${openIndex === index ? 'open' : ''}`}
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="2"
                                 >
-                                    <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M19 9l-7 7-7-7" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            {openIndex === index && (
-                                <div className="faq-answer">
-                                    <p>{faq.answer}</p>
-                                </div>
-                            )}
+                            <div className={`faq-answer ${openIndex === index ? 'open' : ''}`}>
+                                <p>{faq.answer}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
