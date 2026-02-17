@@ -4800,3 +4800,26 @@ body {
     margin-top: 4px;
     font-style: italic;
 }
+
+/* FIX SERVICES PILLS - ELONGATED & NORMAL HEIGHT */
+
+/* 1. Elongate: Make the container wider */
+.services-grid {
+    max-width: 1200px !important; /* Increased from 800px to 1200px */
+}
+
+/* 2. Back to Normal: Revert padding and height */
+.services-section .service-card {
+    padding: 28px 48px !important; /* Reverted from 40px 60px */
+    min-height: auto !important; /* Reverted from 140px */
+}
+
+/* 3. Revert font sizes to normal */
+.services-section .service-title {
+    font-size: 20px !important; /* Reverted from 24px */
+    margin-bottom: 8px !important;
+}
+
+.services-section .service-description {
+    font-size: 14px !important; /* Reverted from 16px */
+}
