@@ -5032,3 +5032,35 @@ body {
         margin: 0 auto !important;
     }
 }
+
+/* FINE-TUNE MOBILE ALIGNMENT */
+@media (max-width: 768px) {
+    /* 1. Hero Headline: Align LEFT */
+    .hero-headline {
+        text-align: left !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+    }
+    
+    /* 2. Hero Description (At Codara...): Align CENTER */
+    .hero-description {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 10px !important; /* Slight padding for safety */
+    }
+
+    /* Container adjustments */
+    .hero-container {
+        align-items: flex-start !important; /* Default to start for headline */
+        padding: 0 24px !important;
+    }
+
+    /* Special rule to center description wrapper if needed */
+    .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important; /* Align children to left initially */
+    }
+}
