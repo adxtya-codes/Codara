@@ -21,18 +21,18 @@ export default function Pricing() {
                 'Add / Edit Properties Anytime',
                 'Lead Collection System',
                 'Basic SEO Setup'
-            ],
-            popular: true
+            ]
         },
         {
             tier: 'Pro',
-            price: '₹24,999',
+            price: '₹19,999',
             badge: 'PREMIUM',
             features: [
                 'Landing Pages for Ads',
                 'Advanced Lead Tracking',
                 'Analytics Setup'
-            ]
+            ],
+            popular: true
         }
     ];
 
@@ -55,8 +55,7 @@ export default function Pricing() {
                 'Property Auto-Send',
                 'Site Visit Booking Option',
                 'Follow-Up Reminder'
-            ],
-            popular: true
+            ]
         },
         {
             tier: 'Advanced Automation',
@@ -67,7 +66,8 @@ export default function Pricing() {
                 'Missed Call Automation',
                 'Lead Qualification',
                 'Simple Lead Dashboard'
-            ]
+            ],
+            popular: true
         }
     ];
 
@@ -154,7 +154,7 @@ export default function Pricing() {
                             </div>
                             <div className="additional-card">
                                 <h3>Hosting & Maintenance</h3>
-                                <div className="additional-price">₹1,999<span>/month</span></div>
+                                <div className="additional-price">₹6,000<span>/year</span></div>
                                 <ul className="additional-features">
                                     <li>Website Hosting</li>
                                     <li>Regular Updates</li>
