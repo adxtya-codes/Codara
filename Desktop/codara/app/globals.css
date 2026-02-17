@@ -2626,3 +2626,21 @@ body {
         font-size: 36px !important;
     }
 }
+
+/* Normalize "We are a passionate team" text - remove excessive spacing */
+@media (max-width: 768px) {
+    .about-hero-headline {
+        line-height: 1.2 !important;
+        letter-spacing: normal !important;
+        word-spacing: normal !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-headline {
+        line-height: 1.2 !important;
+        letter-spacing: normal !important;
+        word-spacing: normal !important;
+        font-size: 38px !important;
+    }
+}
