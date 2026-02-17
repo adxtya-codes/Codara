@@ -4891,3 +4891,35 @@ body {
         font-size: 14px !important;
     }
 }
+
+/* FIX MOBILE SERVICES PILLS */
+@media (max-width: 768px) {
+    .services-section .service-card {
+        border-radius: 20px !important; /* Rounded rectangle instead of pill */
+        padding: 24px 30px !important; 
+        min-height: auto !important;
+        background: transparent !important;
+        border: 1px solid rgba(255,255,255,0.3) !important;
+    }
+
+    .services-section .service-title {
+        font-size: 22px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .services-section .service-description {
+        font-size: 14px !important;
+    }
+}
+
+/* ENSURE PROCESS STEP NUMBERS ARE VISIBLE */
+.step-number {
+    color: #ffffff !important;
+    z-index: 10 !important;
+    position: relative !important;
+    display: block !important;
+}
+
+.step-card:hover .step-number {
+    opacity: 0 !important;
+}
