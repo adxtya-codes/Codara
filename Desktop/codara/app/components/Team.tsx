@@ -1,8 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 
 export default function Team() {
+    const [submitted, setSubmitted] = useState(false);
     const teamMembers = [
         {
             name: 'Aditya',
@@ -96,23 +98,39 @@ export default function Team() {
                         Join our team of innovators. Fill out the form below to apply.
                     </p>
 
-                    <form
-                        className="hiring-form"
-                        action="https://docs.google.com/forms/d/e/1FAIpQLSfzSkMR9OOjk9vVpia5XRwGqYBx-BIc5tg8QlvdRs1mPij9ag/formResponse"
-                        method="POST"
-                        target="_blank"
-                    >
-                        <div className="form-group">
-                            <input type="text" name="entry.580867206" placeholder="Your Name" required className="form-input" />
-                            <input type="email" name="entry.15657967" placeholder="Your Email" required className="form-input" />
-                            <input type="text" name="entry.1737831641" placeholder="Role Applying For" required className="form-input" />
+                    {submitted ? (
+                        <div className="submission-success">
+                            <h3>Query Received!</h3>
+                            <p>We'll get back to you shortly.</p>
+                            <button onClick={() => setSubmitted(false)} className="cta-button">Send Another</button>
                         </div>
-                        <div className="form-group">
-                            <input type="url" name="entry.1694940078" placeholder="Portfolio / LinkedIn URL" className="form-input" />
-                            <input type="text" name="entry.1008020908" placeholder="Why do you want to join us?" required className="form-input" />
-                        </div>
-                        <button type="submit" className="cta-button">Send Application</button>
-                    </form>
+                    ) : (
+                        <>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }} onLoad={() => {
+                                if (submitted) return; // Prevent initial load trigger if logic differs
+                            }}></iframe>
+                            <form
+                                className="hiring-form"
+                                action="https://docs.google.com/forms/d/e/1FAIpQLSfzSkMR9OOjk9vVpia5XRwGqYBx-BIc5tg8QlvdRs1mPij9ag/formResponse"
+                                method="POST"
+                                target="hidden_iframe"
+                                onSubmit={() => {
+                                    setTimeout(() => setSubmitted(true), 1000); // Simulate success as we can't detect iframe load reliably cross-origin
+                                }}
+                            >
+                                <div className="form-group">
+                                    <input type="text" name="entry.580867206" placeholder="Your Name" required className="form-input" />
+                                    <input type="email" name="entry.15657967" placeholder="Your Email" required className="form-input" />
+                                    <input type="text" name="entry.1737831641" placeholder="Role Applying For" required className="form-input" />
+                                </div>
+                                <div className="form-group">
+                                    <input type="url" name="entry.1694940078" placeholder="Portfolio / LinkedIn URL" className="form-input" />
+                                    <input type="text" name="entry.1008020908" placeholder="Why do you want to join us?" required className="form-input" />
+                                </div>
+                                <button type="submit" className="cta-button">Send Application</button>
+                            </form>
+                        </>
+                    )}
                 </div>
             </div>
         </section>
