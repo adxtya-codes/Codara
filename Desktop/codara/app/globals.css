@@ -2752,3 +2752,32 @@ body {
         height: 4px;
     }
 }
+
+/* Remove bounce-dot animation */
+.bounce-dot::before {
+    display: none !important;
+}
+
+/* Wave animation for codara logo */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.logo {
+    display: inline-flex !important;
+    gap: 0;
+}
+
+.wave-letter {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-letter:hover {
+    animation-play-state: paused;
+}

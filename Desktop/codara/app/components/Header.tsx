@@ -9,7 +9,14 @@ export default function Header() {
     return (
         <header className="header">
             <div className="header-container">
-                <Link href="/" className="logo">codara</Link>
+                <Link href="/" className="logo">
+                    <span className="wave-letter" style={{ animationDelay: '0s' }}>c</span>
+                    <span className="wave-letter" style={{ animationDelay: '0.1s' }}>o</span>
+                    <span className="wave-letter" style={{ animationDelay: '0.2s' }}>d</span>
+                    <span className="wave-letter" style={{ animationDelay: '0.3s' }}>a</span>
+                    <span className="wave-letter" style={{ animationDelay: '0.4s' }}>r</span>
+                    <span className="wave-letter" style={{ animationDelay: '0.5s' }}>a</span>
+                </Link>
                 <nav className="nav-links">
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
