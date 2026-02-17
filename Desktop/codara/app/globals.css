@@ -4111,3 +4111,77 @@ body {
 .step-number {
     display: none !important;
 }
+
+/* Restore original step number styling - show as number where icon was */
+.step-number {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: white;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+/* Remove inline step number */
+.step-number-inline {
+    display: none !important;
+}
+
+/* Restore original FAQ styling - simple white boxes */
+.faq-item {
+    background: white !important;
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    margin-bottom: 16px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.faq-item:hover {
+    border-color: #333333 !important;
+}
+
+.faq-item.active {
+    background: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.faq-item.active .faq-question h3 {
+    color: white !important;
+}
+
+.faq-item.active .faq-icon {
+    color: white !important;
+    stroke: white !important;
+}
+
+.faq-item.active .faq-answer p {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.faq-question {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    cursor: pointer !important;
+}
+
+.faq-question h3 {
+    margin: 0 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+}
+
+.faq-icon {
+    width: 20px !important;
+    height: 20px !important;
+    flex-shrink: 0 !important;
+    color: #000000 !important;
+}
