@@ -5375,3 +5375,57 @@ body {
         gap: 20px;
     }
 }
+
+/* HIRING SECTION - WIDER & SHORTER (Horizontal Layout) */
+.hiring-section {
+    max-width: 1300px !important; /* Extremely wide */
+    padding: 50px 40px !important; /* Reduced vertical padding */
+    margin-top: 80px;
+    background: #0a0a0a;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hiring-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Reduced gap */
+    margin-top: 30px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for first row */
+    gap: 20px;
+}
+
+/* Second row with 2 items sharing space */
+.form-group:nth-child(2) {
+    grid-template-columns: 1fr 2fr; /* Portfolio small, 'Why join' wide */
+}
+
+.form-input {
+    padding: 15px 20px;
+    height: 50px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff !important;
+}
+
+.hiring-section .cta-button {
+    width: auto;
+    padding: 12px 40px;
+    margin-top: 10px;
+    align-self: flex-start; /* Align left or center? User prefers banner style.. maybe center */
+    align-self: center;
+}
+
+@media (max-width: 1024px) {
+    .form-group {
+        grid-template-columns: 1fr; /* Stack on mobile/tablet */
+    }
+    .form-group:nth-child(2) {
+        grid-template-columns: 1fr;
+    }
+}

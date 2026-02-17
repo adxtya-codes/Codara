@@ -96,47 +96,21 @@ export default function Team() {
                         Join our team of innovators. Fill out the form below to apply.
                     </p>
 
-                    <form className="hiring-form" onSubmit={async (e) => {
-                        e.preventDefault();
-                        const form = e.target as HTMLFormElement;
-                        const formData = new FormData(form);
-                        const data = Object.fromEntries(formData);
-
-                        const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
-                        const originalText = submitBtn.innerText;
-                        submitBtn.innerText = 'Sending...';
-                        submitBtn.disabled = true;
-
-                        try {
-                            const response = await fetch('/api/hiring', {
-                                method: 'POST',
-                                headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify(data),
-                            });
-
-                            if (response.ok) {
-                                alert('Application sent successfully!');
-                                form.reset();
-                            } else {
-                                alert('Failed to send application. Please try again.');
-                            }
-                        } catch (error) {
-                            console.error('Error:', error);
-                            alert('An error occurred. Please try again.');
-                        } finally {
-                            submitBtn.innerText = originalText;
-                            submitBtn.disabled = false;
-                        }
-                    }}>
+                    <form
+                        className="hiring-form"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSfzSkMR9OOjk9vVpia5XRwGqYBx-BIc5tg8QlvdRs1mPij9ag/formResponse"
+                        method="POST"
+                        target="_blank"
+                    >
                         <div className="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required className="form-input" />
-                            <input type="email" name="email" placeholder="Your Email" required className="form-input" />
+                            <input type="text" name="entry.580867206" placeholder="Your Name" required className="form-input" />
+                            <input type="email" name="entry.15657967" placeholder="Your Email" required className="form-input" />
+                            <input type="text" name="entry.1737831641" placeholder="Role Applying For" required className="form-input" />
                         </div>
                         <div className="form-group">
-                            <input type="text" name="role" placeholder="Role Applying For" required className="form-input" />
-                            <input type="url" name="portfolio" placeholder="Portfolio / LinkedIn URL" className="form-input" />
+                            <input type="url" name="entry.1694940078" placeholder="Portfolio / LinkedIn URL" className="form-input" />
+                            <input type="text" name="entry.1008020908" placeholder="Why do you want to join us?" required className="form-input" />
                         </div>
-                        <textarea name="message" placeholder="Why do you want to join us?" required className="form-textarea" rows={4}></textarea>
                         <button type="submit" className="cta-button">Send Application</button>
                     </form>
                 </div>
