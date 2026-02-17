@@ -4231,3 +4231,107 @@ body {
     line-height: 1.6 !important;
     color: #666666 !important;
 }
+
+/* Fix 1: Process Steps - Show icon by default, number on hover */
+.step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.step-number {
+    display: none !important;
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    line-height: 1 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.step-icon {
+    width: 32px !important;
+    height: 32px !important;
+    color: #000000 !important;
+    display: block !important;
+    transition: opacity 0.3s ease;
+}
+
+.step-card:hover .step-number {
+    display: block !important;
+}
+
+.step-card:hover .step-icon {
+    opacity: 0;
+}
+
+/* Fix 2: Services Pills - Force visibility on home page */
+.services-section .service-card {
+    background: white !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 24px !important;
+    padding: 32px !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.services-section .service-card:hover {
+    border-color: #000000 !important;
+    transform: translateY(-8px) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1) !important;
+}
+
+.services-section .service-title {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    color: #000000 !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.services-section .service-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #666666 !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Fix 3: FAQ - Improve clickability */
+.faq-item {
+    background: white !important;
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 12px !important;
+    padding: 0 !important;
+    margin-bottom: 16px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
+}
+
+.faq-question {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    padding: 24px !important;
+    width: 100% !important;
+}
+
+.faq-answer {
+    padding: 0 24px !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.5s ease, padding 0.5s ease !important;
+}
+
+.faq-answer.open {
+    max-height: 500px !important;
+    padding: 0 24px 24px 24px !important;
+}
