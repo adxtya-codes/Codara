@@ -2644,3 +2644,20 @@ body {
         font-size: 38px !important;
     }
 }
+
+/* Increase logo size for both desktop and mobile */
+.logo {
+    font-size: 32px !important;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 26px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px !important;
+    }
+}
