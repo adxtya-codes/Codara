@@ -91,7 +91,7 @@ export default function Team() {
                 </div>
 
                 <div className="hiring-section" id="hiring">
-                    <h2 className="team-headline">We are Hiring!</h2>
+                    <h2 className="team-headline">Come on board with us!</h2>
                     <p className="team-description">
                         Join our team of innovators. Fill out the form below to apply.
                     </p>
