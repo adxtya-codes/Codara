@@ -2609,3 +2609,20 @@ body {
         padding-top: 15px !important;
     }
 }
+
+/* Fix "We are a passionate team" text spacing on mobile */
+@media (max-width: 768px) {
+    .about-hero-headline {
+        line-height: 1.3 !important;
+        letter-spacing: -0.02em !important;
+        word-spacing: 0.1em !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-headline {
+        line-height: 1.35 !important;
+        letter-spacing: -0.01em !important;
+        font-size: 36px !important;
+    }
+}
