@@ -5084,3 +5084,12 @@ body {
 
     /* Do NOT touch .hero-description to avoid previous conflicts */
 }
+
+/* FIX MOBILE HERO DESCRIPTION PADDING - MOVE FROM LEFT */
+@media (max-width: 768px) {
+    .hero-description {
+        padding-left: 15px !important; /* Move text away from left edge */
+        padding-right: 15px !important;
+        text-align: left !important;
+    }
+}
