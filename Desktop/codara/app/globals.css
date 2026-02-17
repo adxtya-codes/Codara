@@ -3007,3 +3007,77 @@ body {
 .wave-letter:nth-child(6) {
     animation-delay: 5s !important;
 }
+
+/* Continuous glowing underline - never stops */
+@keyframes glowContinuous {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.glow-line::after {
+    animation: glowContinuous 12s ease-in-out infinite !important;
+}
+
+/* Codara logo - reverse animation with black/white transition */
+@keyframes colorChangeReverse {
+    0% {
+        color: white;
+    }
+    8.33% {
+        color: black;
+    }
+    16.66% {
+        color: white;
+    }
+    /* Stay white until reverse */
+    83.33% {
+        color: white;
+    }
+    91.66% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+}
+
+.wave-letter {
+    animation: colorChangeReverse 12s ease-in-out infinite !important;
+}
+
+/* Forward animation: c(0s)  o(1s)  d(2s)  a(3s)  r(4s)  a(5s) */
+/* Reverse animation: a(6s)  r(7s)  a(8s)  d(9s)  o(10s)  c(11s) */
+
+.wave-letter:nth-child(1) {
+    animation-delay: 0s !important;
+}
+
+.wave-letter:nth-child(2) {
+    animation-delay: -10s !important;
+}
+
+.wave-letter:nth-child(3) {
+    animation-delay: -8s !important;
+}
+
+.wave-letter:nth-child(4) {
+    animation-delay: -6s !important;
+}
+
+.wave-letter:nth-child(5) {
+    animation-delay: -4s !important;
+}
+
+.wave-letter:nth-child(6) {
+    animation-delay: -2s !important;
+}
