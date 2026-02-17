@@ -85,8 +85,7 @@ export default function ProcessSteps() {
                     {steps.map((step, index) => (
                         <div key={index} className="step-card">
                             <div className="step-icon-hover">{step.icon}</div>
-                            <div className="step-number">{step.number}.</div>
-                            <h3 className="step-title">{step.title}</h3>
+                            <h3 className="step-title"><span className="step-number-inline">{step.number}.</span> {step.title}</h3>
                             <p className="step-description">{step.description}</p>
                         </div>
                     ))}

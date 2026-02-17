@@ -48,7 +48,7 @@ export default function FAQ() {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="faq-item"
+                            className={`faq-item ${openIndex === index ? 'active' : ''}`}
                         >
                             <div
                                 className="faq-question"
