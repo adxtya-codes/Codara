@@ -7,8 +7,12 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: 'When will I be charged for my order?',
-            answer: 'You will be charged immediately upon placing your order. Payment is processed securely through our payment gateway, and you will receive a confirmation email with your receipt.'
+            question: 'What is the payment plan?',
+            answer: 'We follow a milestone-based payment structure: 50% upfront to start the project, and the remaining 50% upon successful delivery.'
+        },
+        {
+            question: 'Will you provide support?',
+            answer: 'Yes, we provide 24/7 support including weekends to ensure your business never faces any downtime.'
         },
         {
             question: 'Do I have to pay customs fees or duty on my package?',
