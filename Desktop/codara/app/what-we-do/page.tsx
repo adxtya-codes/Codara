@@ -4,22 +4,18 @@ import Footer from '../components/Footer';
 export default function WhatWeDo() {
     const services = [
         {
-            icon: '🌐',
             title: 'Website Development',
             description: 'We build beautiful, fast websites for your business. Whether you need a simple 5-page site or a complex platform where you can add and manage content yourself, we\'ve got you covered. Your website will look great on phones, tablets, and computers.'
         },
         {
-            icon: '🤖',
             title: 'WhatsApp Automation Bots',
             description: 'Imagine having a smart assistant that replies to your WhatsApp messages instantly - even when you\'re sleeping! Our bots can answer questions, collect customer details, share information about your products or services, and even book appointments automatically.'
         },
         {
-            icon: '💬',
             title: 'Chatbots for Your Business',
             description: 'Never miss a customer inquiry again. Our chatbots work 24/7 on your website, answering common questions, helping visitors find what they need, and collecting their contact information so you can follow up later.'
         },
         {
-            icon: '⚡',
             title: 'Automation Tools',
             description: 'Stop doing repetitive tasks manually. We create custom automation tools that handle boring, time-consuming work for you - like sending follow-up messages, organizing leads, tracking customer interactions, and generating reports. This gives you more time to focus on growing your business.'
         }
@@ -43,7 +39,6 @@ export default function WhatWeDo() {
                     <div className="services-grid">
                         {services.map((service, index) => (
                             <div key={index} className="service-card">
-                                <div className="service-icon">{service.icon}</div>
                                 <h3 className="service-title">{service.title}</h3>
                                 <p className="service-description">{service.description}</p>
                             </div>

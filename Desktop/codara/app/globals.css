@@ -3549,3 +3549,194 @@ body {
         padding: 6px 12px !important;
     }
 }
+
+/* Remove logo border */
+.logo {
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Update Pricing Page to Black Theme */
+.pricing-section {
+    background: #000000 !important;
+}
+
+.category-icon {
+    display: none !important;
+}
+
+.category-title {
+    color: white !important;
+}
+
+.pricing-card {
+    background: #1a1a1a !important;
+    border: 2px solid #333333 !important;
+}
+
+.pricing-card:hover {
+    border-color: #555555 !important;
+}
+
+.pricing-card.popular {
+    border: 2px solid white !important;
+    background: #222222 !important;
+}
+
+.tier-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: white;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.tier-icon {
+    display: none !important;
+}
+
+.tier-name {
+    color: white !important;
+}
+
+.tier-price {
+    color: white !important;
+}
+
+.features-list li {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.pricing-cta {
+    background: white !important;
+    color: #000000 !important;
+}
+
+.pricing-cta:hover {
+    background: #e0e0e0 !important;
+}
+
+.additional-title {
+    color: white !important;
+}
+
+.additional-card {
+    background: #1a1a1a !important;
+    border: 2px solid #333333;
+}
+
+.additional-icon {
+    display: none !important;
+}
+
+.additional-card h3 {
+    color: white !important;
+}
+
+.additional-price {
+    color: white !important;
+}
+
+.additional-price span {
+    color: rgba(255,255,255,0.6) !important;
+}
+
+.additional-features li {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.pricing-cta-section {
+    background: #1a1a1a !important;
+    border: 2px solid #333333;
+}
+
+.pricing-cta-section h2 {
+    color: white !important;
+}
+
+.pricing-cta-section p {
+    color: rgba(255,255,255,0.7) !important;
+}
+
+.main-cta-button {
+    background: white !important;
+    color: #000000 !important;
+}
+
+.main-cta-button:hover {
+    background: #e0e0e0 !important;
+}
+
+/* Update What We Do Page to Black Theme */
+.what-we-do-section {
+    background: #000000 !important;
+}
+
+.service-card {
+    background: #1a1a1a !important;
+    border: 2px solid #333333;
+}
+
+.service-card:hover {
+    border-color: #555555 !important;
+}
+
+.service-icon {
+    display: none !important;
+}
+
+.service-title {
+    color: white !important;
+}
+
+.service-description {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.how-it-works {
+    background: #1a1a1a !important;
+    border: 2px solid #333333;
+}
+
+.how-it-works h2 {
+    color: white !important;
+}
+
+.step-number {
+    background: white !important;
+    color: #000000 !important;
+}
+
+.work-step h3 {
+    color: white !important;
+}
+
+.work-step p {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.what-we-do-cta {
+    background: white !important;
+    color: #000000 !important;
+}
+
+.what-we-do-cta h2 {
+    color: #000000 !important;
+}
+
+.what-we-do-cta p {
+    color: rgba(0,0,0,0.7) !important;
+}
+
+.what-we-do-cta .main-cta-button {
+    background: #000000 !important;
+    color: white !important;
+}
+
+.what-we-do-cta .main-cta-button:hover {
+    background: #333333 !important;
+}

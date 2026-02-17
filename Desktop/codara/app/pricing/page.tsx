@@ -6,7 +6,7 @@ export default function Pricing() {
         {
             tier: 'Starter',
             price: '₹7,999',
-            icon: '🥉',
+            badge: 'BASIC',
             features: [
                 '5 Pages (Home, About, Listings, Contact)',
                 'Enquiry Form',
@@ -16,7 +16,7 @@ export default function Pricing() {
         {
             tier: 'Dynamic',
             price: '₹14,999',
-            icon: '🥈',
+            badge: 'POPULAR',
             features: [
                 'Add / Edit Properties Anytime',
                 'Lead Collection System',
@@ -27,7 +27,7 @@ export default function Pricing() {
         {
             tier: 'Pro',
             price: '₹24,999',
-            icon: '🥇',
+            badge: 'PREMIUM',
             features: [
                 'Landing Pages for Ads',
                 'Advanced Lead Tracking',
@@ -40,7 +40,7 @@ export default function Pricing() {
         {
             tier: 'Basic Bot',
             price: '₹4,999',
-            icon: '🥉',
+            badge: 'BASIC',
             features: [
                 'Instant Auto Reply',
                 'Collect Name, Budget & Location',
@@ -50,7 +50,7 @@ export default function Pricing() {
         {
             tier: 'Smart Bot',
             price: '₹11,999',
-            icon: '🥈',
+            badge: 'POPULAR',
             features: [
                 'Property Auto-Send',
                 'Site Visit Booking Option',
@@ -61,7 +61,7 @@ export default function Pricing() {
         {
             tier: 'Advanced Automation',
             price: '₹19,999',
-            icon: '🥇',
+            badge: 'PREMIUM',
             features: [
                 'Auto Follow-Ups',
                 'Missed Call Automation',
@@ -88,7 +88,6 @@ export default function Pricing() {
                 <div className="pricing-container">
                     <div className="pricing-category">
                         <div className="category-header">
-                            <span className="category-icon">🌐</span>
                             <h2 className="category-title">Real Estate Website Services</h2>
                         </div>
                         <div className="pricing-grid">
@@ -96,7 +95,7 @@ export default function Pricing() {
                                 <div key={index} className={`pricing-card ${service.popular ? 'popular' : ''}`}>
                                     {service.popular && <div className="popular-badge">Most Popular</div>}
                                     <div className="pricing-card-header">
-                                        <span className="tier-icon">{service.icon}</span>
+                                        <div className="tier-badge">{service.badge}</div>
                                         <h3 className="tier-name">{service.tier} Website</h3>
                                         <div className="tier-price">{service.price}</div>
                                     </div>
@@ -116,7 +115,6 @@ export default function Pricing() {
 
                     <div className="pricing-category">
                         <div className="category-header">
-                            <span className="category-icon">🤖</span>
                             <h2 className="category-title">WhatsApp Automation Services</h2>
                         </div>
                         <div className="pricing-grid">
@@ -124,7 +122,7 @@ export default function Pricing() {
                                 <div key={index} className={`pricing-card ${service.popular ? 'popular' : ''}`}>
                                     {service.popular && <div className="popular-badge">Most Popular</div>}
                                     <div className="pricing-card-header">
-                                        <span className="tier-icon">{service.icon}</span>
+                                        <div className="tier-badge">{service.badge}</div>
                                         <h3 className="tier-name">{service.tier}</h3>
                                         <div className="tier-price">{service.price}</div>
                                     </div>
@@ -146,7 +144,6 @@ export default function Pricing() {
                         <h2 className="additional-title">Additional Services</h2>
                         <div className="additional-grid">
                             <div className="additional-card">
-                                <span className="additional-icon">📲</span>
                                 <h3>WhatsApp Property Catalogue Setup</h3>
                                 <div className="additional-price">₹2,999</div>
                                 <ul className="additional-features">
@@ -156,7 +153,6 @@ export default function Pricing() {
                                 </ul>
                             </div>
                             <div className="additional-card">
-                                <span className="additional-icon">🔧</span>
                                 <h3>Hosting & Maintenance</h3>
                                 <div className="additional-price">₹1,999<span>/month</span></div>
                                 <ul className="additional-features">
