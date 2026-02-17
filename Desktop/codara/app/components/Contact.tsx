@@ -11,7 +11,7 @@ export default function Contact() {
 
                     <div className="contact-methods">
                         <a
-                            href="https://wa.me/918810202799?text=Hello%2C%20I%20would%20like%20to%20enquire%20for%20a%20project%20with%20you."
+                            href="https://wa.me/918810202799?text=Hello%2C%20Codarist%20I%20would%20like%20to%20enquire%20for%20my%20project%21"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="contact-whatsapp-btn"

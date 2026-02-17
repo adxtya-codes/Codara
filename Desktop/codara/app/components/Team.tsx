@@ -60,7 +60,7 @@ export default function Team() {
                             <p className="team-member-description">{member.description}</p>
                             <div className="team-socials">
                                 <a
-                                    href={`https://wa.me/${member.whatsapp}`}
+                                    href={`https://wa.me/${member.whatsapp}?text=Hello%2C%20Codarist%20I%20would%20like%20to%20enquire%20for%20my%20project%21`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="social-icon"
@@ -86,6 +86,57 @@ export default function Team() {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                <div className="hiring-section" id="hiring">
+                    <h2 className="team-headline">We are Hiring!</h2>
+                    <p className="team-description">
+                        Join our team of innovators. Fill out the form below to apply.
+                    </p>
+
+                    <form className="hiring-form" onSubmit={async (e) => {
+                        e.preventDefault();
+                        const form = e.target as HTMLFormElement;
+                        const formData = new FormData(form);
+                        const data = Object.fromEntries(formData);
+
+                        const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+                        const originalText = submitBtn.innerText;
+                        submitBtn.innerText = 'Sending...';
+                        submitBtn.disabled = true;
+
+                        try {
+                            const response = await fetch('/api/hiring', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(data),
+                            });
+
+                            if (response.ok) {
+                                alert('Application sent successfully!');
+                                form.reset();
+                            } else {
+                                alert('Failed to send application. Please try again.');
+                            }
+                        } catch (error) {
+                            console.error('Error:', error);
+                            alert('An error occurred. Please try again.');
+                        } finally {
+                            submitBtn.innerText = originalText;
+                            submitBtn.disabled = false;
+                        }
+                    }}>
+                        <div className="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required className="form-input" />
+                            <input type="email" name="email" placeholder="Your Email" required className="form-input" />
+                        </div>
+                        <div className="form-group">
+                            <input type="text" name="role" placeholder="Role Applying For" required className="form-input" />
+                            <input type="url" name="portfolio" placeholder="Portfolio / LinkedIn URL" className="form-input" />
+                        </div>
+                        <textarea name="message" placeholder="Why do you want to join us?" required className="form-textarea" rows={4}></textarea>
+                        <button type="submit" className="cta-button">Send Application</button>
+                    </form>
                 </div>
             </div>
         </section>

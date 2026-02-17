@@ -9,7 +9,7 @@ export default function Footer() {
                         <h3>codara</h3>
                         <p>Building intelligent digital systems that help businesses scale and succeed in the modern world.</p>
                         <a
-                            href="https://wa.me/918810202799?text=Hello%2C%20I%20would%20like%20to%20enquire%20for%20a%20project%20with%20you."
+                            href="https://wa.me/918810202799?text=Hello%2C%20Codarist%20I%20would%20like%20to%20enquire%20for%20my%20project%21"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="footer-cta"
@@ -42,9 +42,9 @@ export default function Footer() {
                             <h4>CONTACT</h4>
                             <div className="footer-contact-group">
                                 <span className="footer-contact-label">WhatsApp:</span>
-                                <a href="https://wa.me/918810202799" target="_blank" rel="noopener noreferrer">+91 88102 02799</a>
-                                <a href="https://wa.me/919711987048" target="_blank" rel="noopener noreferrer">+91 97119 87048</a>
-                                <a href="https://wa.me/918882989995" target="_blank" rel="noopener noreferrer">+91 88829 89995</a>
+                                <a href="https://wa.me/918810202799?text=Hello%2C%20Codarist%20I%20would%20like%20to%20enquire%20for%20my%20project%21" target="_blank" rel="noopener noreferrer">+91 88102 02799</a>
+                                <a href="https://wa.me/919711987048?text=Hello%2C%20Codarist%20I%20would%20like%20to%20enquire%20for%20my%20project%21" target="_blank" rel="noopener noreferrer">+91 97119 87048</a>
+                                <a href="https://wa.me/918882989995?text=Hello%2C%20Codarist%20I%20would%20like%20to%20enquire%20for%20my%20project%21" target="_blank" rel="noopener noreferrer">+91 88829 89995</a>
                             </div>
                             <div className="footer-contact-group">
                                 <span className="footer-contact-label">Call:</span>

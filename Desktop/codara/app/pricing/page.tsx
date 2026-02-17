@@ -88,7 +88,7 @@ export default function Pricing() {
                 <div className="pricing-container">
                     <div className="pricing-category">
                         <div className="category-header">
-                            <h2 className="category-title">Real Estate Website Services</h2>
+                            <h2 className="category-title">Pricing</h2>
                         </div>
                         <div className="pricing-grid">
                             {websiteServices.map((service, index) => (
@@ -172,7 +172,7 @@ export default function Pricing() {
                     <div className="pricing-cta-section">
                         <h2>Ready to get started?</h2>
                         <p>Contact us for a quick demo and see how our systems work for real estate enquiries</p>
-                        <a href="tel:+918810202799" className="main-cta-button">Book a Free Strategy Call</a>
+                        <a href="https://cal.com/codara" target="_blank" rel="noopener noreferrer" className="main-cta-button">Book a Free Strategy Call</a>
                     </div>
                 </div>
             </section>

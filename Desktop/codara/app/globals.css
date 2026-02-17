@@ -5125,3 +5125,63 @@ body {
         margin-right: auto !important; 
     }
 }
+
+/* HIRING SECTION STYLES */
+.hiring-section {
+    margin-top: 80px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    background: #0a0a0a;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hiring-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .hiring-section {
+        margin-top: 60px;
+        padding: 30px 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
