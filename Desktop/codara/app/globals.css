@@ -4520,3 +4520,73 @@ body {
 .step-card:hover .step-icon {
     display: block !important;
 }
+
+/* RESTORE ORIGINAL SERVICES PILLS - Black background with pill shapes */
+.services-section {
+    background: #000000 !important;
+    padding: 80px 0 !important;
+}
+
+.services-container {
+    background: #000000 !important;
+}
+
+.services-intro {
+    background: #000000 !important;
+}
+
+.services-headline {
+    color: white !important;
+}
+
+.services-grid {
+    display: grid !important;
+    gap: 20px !important;
+}
+
+.services-section .service-card {
+    background: white !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 24px 40px !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.services-section .service-card:hover {
+    background: rgba(255,255,255,0.9) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 24px rgba(255,255,255,0.2) !important;
+}
+
+.services-section .service-content {
+    display: block !important;
+    width: 100% !important;
+}
+
+.services-section .service-title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    color: #000000 !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.services-section .service-description {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    color: #666666 !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+@media (max-width: 768px) {
+    .services-section .service-card {
+        padding: 20px 32px !important;
+    }
+}
