@@ -5486,3 +5486,50 @@ body {
     font-size: 18px !important;
     padding: 16px 50px !important;
 }
+
+/* FIX PAGE & DESIGN UPGRADES */
+
+/* Better Input Boxes ('Proper like good design') */
+.form-input {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important; /* Softer radius */
+    padding: 0 30px !important;
+    font-size: 18px !important;
+    color: #fff !important;
+    transition: all 0.3s ease;
+    height: 65px !important; /* Taller for premium feel */
+}
+
+/* Hover/Focus states for inputs */
+.form-input:hover {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.form-input:focus {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #fff !important;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+/* Hiring Section Tweaks */
+.hiring-section {
+    padding: 50px 60px !important; /* Balanced padding */
+    border-radius: 30px !important; /* Softer corners */
+    background: linear-gradient(145deg, #111, #0a0a0a) !important; /* Subtle gradient */
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6) !important;
+}
+
+.submission-success h3 {
+    font-size: 48px !important; /* BIG Message for 'Lets go' */
+    background: linear-gradient(to right, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px !important;
+}
+
+.submission-success p {
+    font-size: 24px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}

@@ -100,8 +100,8 @@ export default function Team() {
 
                     {submitted ? (
                         <div className="submission-success">
-                            <h3>Query Received!</h3>
-                            <p>We'll get back to you shortly.</p>
+                            <h3>Let's go!</h3>
+                            <p>We will get back to you soon!</p>
                             <button onClick={() => setSubmitted(false)} className="cta-button">Send Another</button>
                         </div>
                     ) : (
