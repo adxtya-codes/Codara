@@ -5105,3 +5105,23 @@ body {
         padding-right: 15px !important;
     }
 }
+
+/* FIX MOBILE ALIGNMENT - SERVICES INTRO CENTER, HERO HEADLINE LEFT */
+@media (max-width: 768px) {
+    /* Focus specifically on 'At Codara...' text in Services */
+    .services-intro .services-headline {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 10px !important;
+    }
+    
+    /* Ensure Hero headline stays LEFT as requested */
+    .hero-headline {
+        text-align: left !important;
+        padding-left: 15px !important;
+        /* Ensure no center alignment accidentally inherits */
+        margin-left: 0 !important;
+        margin-right: auto !important; 
+    }
+}
