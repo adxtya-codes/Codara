@@ -7,11 +7,12 @@ export default function Hero() {
             <div className="hero-container">
                 <div className="hero-content">
                     <h1 className="hero-headline">
-                        <span className="headline-line">We build intelligent</span>
-                        <span className="headline-line">digital</span>
-                        <span className="headline-line">systems that</span>
-                        <span className="headline-line">scale</span>
-                        <span className="headline-line">businesses</span>
+                        <span className="headline-line glow-line" data-index="0">We build</span>
+                        <span className="headline-line glow-line" data-index="1">intelligent</span>
+                        <span className="headline-line glow-line" data-index="2">digital</span>
+                        <span className="headline-line glow-line" data-index="3">systems that</span>
+                        <span className="headline-line glow-line" data-index="4">scale</span>
+                        <span className="headline-line glow-line" data-index="5">businesses</span>
                     </h1>
 
                     <p className="hero-description">
