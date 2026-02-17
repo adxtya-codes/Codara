@@ -3911,3 +3911,57 @@ body {
 .faq-icon.open {
     transform: rotate(180deg);
 }
+
+/* Fix: Make What We Do service cards more specific to avoid conflicts */
+.what-we-do-section .service-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%) !important;
+    border: 1px solid #333333 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: all 0.4s ease !important;
+}
+
+.what-we-do-section .service-card:hover {
+    border-color: #666666 !important;
+    box-shadow: 0 8px 30px rgba(255,255,255,0.1);
+    transform: translateY(-12px) !important;
+}
+
+.what-we-do-section .service-title {
+    background: linear-gradient(90deg, #ffffff 0%, #cccccc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.what-we-do-section .service-description {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+/* Remove generic service-card styles that conflict */
+.service-card {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.service-card:hover {
+    border-color: initial !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+.service-icon {
+    display: block !important;
+}
+
+.service-title {
+    color: initial !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+}
+
+.service-description {
+    color: initial !important;
+}
