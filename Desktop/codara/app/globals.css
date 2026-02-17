@@ -4857,3 +4857,37 @@ body {
 .services-section .service-description {
     font-size: 16px !important; /* Slightly adjusted */
 }
+
+/* FIX WHAT WE DO PAGE - WHITE NUMBERS */
+.step-number {
+    color: #ffffff !important; /* Changed from black to white */
+}
+
+/* FIX MOBILE SERVICES PILLS - MATCH WEB VIEW */
+@media (max-width: 768px) {
+    .services-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+        padding: 0 20px !important;
+    }
+
+    .services-section .service-card {
+        border-radius: 9999px !important; /* Force pill shape on mobile */
+        padding: 24px 40px !important; /* Slightly smaller padding for mobile but keeping proportion */
+        width: 100% !important;
+        min-height: auto !important;
+        margin-bottom: 0 !important;
+        background: transparent !important; /* Keep transparent background */
+        border: 2px solid rgba(255,255,255,0.3) !important; /* Keep white border */
+    }
+
+    .services-section .service-title {
+        font-size: 24px !important; /* readable size on mobile */
+    }
+
+    .services-section .service-description {
+        font-size: 14px !important;
+    }
+}

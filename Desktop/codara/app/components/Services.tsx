@@ -12,7 +12,7 @@ export default function Services() {
         },
         {
             title: 'Whatsapp, Discord and Telegram Bots',
-            description: 'Automating tasks, engaging users, and enhancing interactions across these platforms while you sit worry free',
+            description: 'Send Catalogues and Book Appointments automatically, engaging users, and enhancing interactions across these platforms while you sit worry free',
         },
         {
             title: 'Mobile Apps',
