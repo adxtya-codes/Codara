@@ -4416,3 +4416,107 @@ body {
     display: block !important;
     visibility: visible !important;
 }
+
+/* Fix FAQ - Simple white boxes, no black background */
+.faq-item {
+    background: white !important;
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 12px !important;
+    padding: 0 !important;
+    margin-bottom: 16px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
+}
+
+.faq-item:hover {
+    border-color: #cccccc !important;
+}
+
+.faq-item.active {
+    background: white !important;
+    border-color: #000000 !important;
+}
+
+.faq-question {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    padding: 24px !important;
+    width: 100% !important;
+}
+
+.faq-question h3 {
+    margin: 0 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+}
+
+.faq-icon {
+    width: 20px !important;
+    height: 20px !important;
+    flex-shrink: 0 !important;
+    color: #000000 !important;
+    stroke: #000000 !important;
+}
+
+.faq-answer {
+    padding: 0 24px !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.5s ease, padding 0.5s ease !important;
+}
+
+.faq-answer.open {
+    max-height: 500px !important;
+    padding: 0 24px 24px 24px !important;
+}
+
+.faq-answer p {
+    color: #666666 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+/* Fix Process Steps - Prevent overlap, proper positioning */
+.step-header {
+    display: block !important;
+    margin-bottom: 20px !important;
+    height: 60px !important;
+    position: relative !important;
+}
+
+.step-number {
+    display: block !important;
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    line-height: 1 !important;
+    position: static !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.step-icon {
+    width: 32px !important;
+    height: 32px !important;
+    color: #000000 !important;
+    display: none !important;
+    position: static !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.step-icon svg {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+/* On hover: hide number, show icon */
+.step-card:hover .step-number {
+    display: none !important;
+}
+
+.step-card:hover .step-icon {
+    display: block !important;
+}
