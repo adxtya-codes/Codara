@@ -3740,3 +3740,123 @@ body {
 .what-we-do-cta .main-cta-button:hover {
     background: #333333 !important;
 }
+
+/* Enhanced Card Designs for Black/White Theme */
+
+/* Pricing Cards - Better Design */
+.pricing-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%) !important;
+    border: 1px solid #333333 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: all 0.4s ease !important;
+}
+
+.pricing-card:hover {
+    border-color: #666666 !important;
+    box-shadow: 0 8px 30px rgba(255,255,255,0.1);
+    transform: translateY(-12px) !important;
+}
+
+.pricing-card.popular {
+    border: 2px solid white !important;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%) !important;
+    box-shadow: 0 8px 40px rgba(255,255,255,0.15);
+}
+
+.pricing-card.popular:hover {
+    box-shadow: 0 12px 50px rgba(255,255,255,0.25);
+}
+
+.pricing-card-header {
+    border-bottom: 1px solid #333333 !important;
+}
+
+.tier-badge {
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%) !important;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.2);
+}
+
+.popular-badge {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%) !important;
+    box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+}
+
+/* What We Do Cards - Better Design */
+.service-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%) !important;
+    border: 1px solid #333333 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: all 0.4s ease !important;
+}
+
+.service-card:hover {
+    border-color: #666666 !important;
+    box-shadow: 0 8px 30px rgba(255,255,255,0.1);
+    transform: translateY(-12px) !important;
+}
+
+.service-title {
+    background: linear-gradient(90deg, #ffffff 0%, #cccccc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Additional Services Cards */
+.additional-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%) !important;
+    border: 1px solid #333333 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: all 0.4s ease;
+}
+
+.additional-card:hover {
+    border-color: #666666 !important;
+    box-shadow: 0 8px 30px rgba(255,255,255,0.1);
+    transform: translateY(-8px);
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%) !important;
+    border: 1px solid #333333 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.step-number {
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%) !important;
+    box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+}
+
+/* CTA Sections */
+.pricing-cta-section {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%) !important;
+    border: 1px solid #444444 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.what-we-do-cta {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%) !important;
+    box-shadow: 0 8px 40px rgba(255,255,255,0.2);
+}
+
+/* Button Enhancements */
+.pricing-cta {
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%) !important;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.2);
+    transition: all 0.3s ease !important;
+}
+
+.pricing-cta:hover {
+    background: linear-gradient(135deg, #e0e0e0 0%, #cccccc 100%) !important;
+    box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+}
+
+.main-cta-button {
+    box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+    transition: all 0.3s ease !important;
+}
+
+.main-cta-button:hover {
+    box-shadow: 0 6px 20px rgba(255,255,255,0.3);
+}

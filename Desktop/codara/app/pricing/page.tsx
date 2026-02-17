@@ -21,7 +21,8 @@ export default function Pricing() {
                 'Add / Edit Properties Anytime',
                 'Lead Collection System',
                 'Basic SEO Setup'
-            ]
+            ],
+            popular: true
         },
         {
             tier: 'Pro',
@@ -31,8 +32,7 @@ export default function Pricing() {
                 'Landing Pages for Ads',
                 'Advanced Lead Tracking',
                 'Analytics Setup'
-            ],
-            popular: true
+            ]
         }
     ];
 
