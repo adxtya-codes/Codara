@@ -2781,3 +2781,30 @@ body {
 .wave-letter:hover {
     animation-play-state: paused;
 }
+
+/* Remove wave animation and add color-changing animation */
+@keyframes colorChange {
+    0%, 100% {
+        color: white;
+    }
+    50% {
+        color: #666666;
+    }
+}
+
+.wave-letter {
+    display: inline-block;
+    animation: colorChange 3s ease-in-out infinite !important;
+    transform: none !important;
+}
+
+.wave-letter:hover {
+    animation-play-state: paused;
+}
+
+/* Override wave animation */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+}
