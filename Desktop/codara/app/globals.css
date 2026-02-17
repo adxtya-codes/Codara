@@ -5256,3 +5256,21 @@ body {
 .form-group {
     gap: 30px !important;
 }
+
+/* FORCE WHITE TEXT IN HIRING SECTION */
+.hiring-section .team-headline {
+    color: #ffffff !important;
+}
+
+.hiring-section .team-description {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.hiring-form ::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.hiring-form input, 
+.hiring-form textarea {
+    color: #ffffff !important;
+}
