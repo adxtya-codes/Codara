@@ -20,8 +20,9 @@ export default function Header() {
                 <nav className="nav-links">
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
-                    <Link href="/what-we-do">What We Do</Link>
-                    <Link href="/pricing">Pricing</Link>
+                    <Link href="/what-we-do" className="nav-link">What We Do</Link>
+                    <Link href="/pricing" className="nav-link">Pricing</Link>
+                    <Link href="/team" className="nav-link">Team</Link>
                     <Link href="/#contact">Contact</Link>
                 </nav>
                 <button
