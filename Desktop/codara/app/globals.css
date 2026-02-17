@@ -2822,3 +2822,71 @@ body {
 .hero-image img {
     animation: float 4s ease-in-out infinite;
 }
+
+/* Animated colorful underline for hero headline */
+@keyframes moveUnderline {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    20% {
+        width: 30%;
+    }
+    40% {
+        left: 0;
+        width: 60%;
+    }
+    60% {
+        left: 40%;
+        width: 60%;
+    }
+    80% {
+        left: 70%;
+        width: 30%;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
+
+@keyframes colorShift {
+    0% {
+        background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    }
+    25% {
+        background: linear-gradient(90deg, #4ecdc4, #45b7d1);
+    }
+    50% {
+        background: linear-gradient(90deg, #45b7d1, #f7b731);
+    }
+    75% {
+        background: linear-gradient(90deg, #f7b731, #5f27cd);
+    }
+    100% {
+        background: linear-gradient(90deg, #5f27cd, #ff6b6b);
+    }
+}
+
+.hero-headline {
+    position: relative;
+}
+
+.hero-headline::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    border-radius: 2px;
+    animation: moveUnderline 6s ease-in-out infinite, colorShift 6s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .hero-headline::after {
+        height: 2px;
+        bottom: -6px;
+    }
+}
