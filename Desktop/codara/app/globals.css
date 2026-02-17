@@ -2710,3 +2710,45 @@ body {
     transform: translateX(-50%);
     animation: bounceDot 1.5s ease-in-out infinite;
 }
+
+/* Remove logo animation and add to hero headline 'i' in 'build' */
+.logo::after {
+    display: none !important;
+}
+
+/* Bouncing dot for 'i' in 'build' in hero headline */
+.hero-headline {
+    position: relative;
+}
+
+.bounce-dot {
+    display: inline-block;
+    position: relative;
+}
+
+.bounce-dot::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounceDot 1.5s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .bounce-dot::before {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bounce-dot::before {
+        width: 4px;
+        height: 4px;
+    }
+}

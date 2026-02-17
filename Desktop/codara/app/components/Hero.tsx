@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="hero-container">
                 <div className="hero-content">
                     <h1 className="hero-headline">
-                        <span className="headline-line">We build intelligent</span>
+                        <span className="headline-line">We bu<span className="bounce-dot">i</span>ld intelligent</span>
                         <span className="headline-line">digital</span>
                         <span className="headline-line">systems that</span>
                         <span className="headline-line">scale</span>
