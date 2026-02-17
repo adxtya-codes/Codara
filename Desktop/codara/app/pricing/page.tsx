@@ -6,23 +6,23 @@ export default function Pricing() {
         {
             tier: 'Starter',
             price: '₹7,999',
-            badge: 'BASIC',
+            badge: 'POPULAR',
             features: [
                 '5 Pages (Home, About, Listings, Contact)',
                 'Enquiry Form',
                 'Mobile Responsive Design'
-            ]
+            ],
+            popular: true
         },
         {
             tier: 'Dynamic',
             price: '₹14,999',
-            badge: 'POPULAR',
+            badge: 'ADVANCED',
             features: [
                 'Add / Edit Properties Anytime',
                 'Lead Collection System',
                 'Basic SEO Setup'
-            ],
-            popular: true
+            ]
         },
         {
             tier: 'Pro',
@@ -55,7 +55,8 @@ export default function Pricing() {
                 'Property Auto-Send',
                 'Site Visit Booking Option',
                 'Follow-Up Reminder'
-            ]
+            ],
+            popular: true
         },
         {
             tier: 'Advanced Automation',
@@ -66,8 +67,7 @@ export default function Pricing() {
                 'Missed Call Automation',
                 'Lead Qualification',
                 'Simple Lead Dashboard'
-            ],
-            popular: true
+            ]
         }
     ];
 
@@ -144,17 +144,22 @@ export default function Pricing() {
                         <h2 className="additional-title">Additional Services</h2>
                         <div className="additional-grid">
                             <div className="additional-card">
-                                <h3>WhatsApp Property Catalogue Setup</h3>
+                                <h3>WhatsApp Catalogue Setup</h3>
                                 <div className="additional-price">₹2,999</div>
                                 <ul className="additional-features">
-                                    <li>Upload Property Photos</li>
+                                    <li>Upload Catalogue Photos</li>
                                     <li>Add Price & Details</li>
+                                    <li>Appointment Booking</li>
                                     <li>Categories (Buy / Rent / Commercial)</li>
                                 </ul>
                             </div>
                             <div className="additional-card">
                                 <h3>Hosting & Maintenance</h3>
-                                <div className="additional-price">₹6,000<span>/year</span></div>
+                                <div className="additional-price">
+                                    ₹1,499<span>/monthly</span><br />
+                                    ₹5,999<span>/yearly</span>
+                                </div>
+                                <p className="price-note">*applicable on all type of projects</p>
                                 <ul className="additional-features">
                                     <li>Website Hosting</li>
                                     <li>Regular Updates</li>

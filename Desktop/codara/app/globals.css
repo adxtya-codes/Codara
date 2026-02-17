@@ -4778,3 +4778,25 @@ body {
 .services-section .service-card:hover .service-description {
     color: #666666 !important;
 }
+
+/* MAKE PILLS LARGER */
+.services-section .service-card {
+    padding: 40px 60px !important; /* Increased padding */
+    min-height: 140px !important; /* Increased height */
+}
+
+.services-section .service-title {
+    font-size: 24px !important; /* Larger title */
+    margin-bottom: 12px !important;
+}
+
+.services-section .service-description {
+    font-size: 16px !important; /* Larger description */
+}
+
+.price-note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+    font-style: italic;
+}
