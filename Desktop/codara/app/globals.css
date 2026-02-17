@@ -5297,3 +5297,81 @@ body {
     padding: 18px 48px;
     min-width: 200px;
 }
+
+/* RESTORE AND FIX HIRING SECTION STYLES */
+.hiring-section {
+    max-width: 1100px !important;
+    padding: 80px 60px !important;
+    background: #0a0a0a;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hiring-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group {
+    display: flex;
+    gap: 30px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 18px 24px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff !important; /* Force white text */
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.05);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.hiring-section .team-headline {
+    color: #ffffff !important;
+}
+
+.hiring-section .team-description {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.cta-button {
+    align-self: center;
+    min-width: 250px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .hiring-section {
+        padding: 40px 20px !important;
+    }
+    .form-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
