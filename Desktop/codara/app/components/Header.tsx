@@ -20,7 +20,8 @@ export default function Header() {
                 <nav className="nav-links">
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
-                    <Link href="/#services">Services</Link>
+                    <Link href="/what-we-do">What We Do</Link>
+                    <Link href="/pricing">Pricing</Link>
                     <Link href="/#contact">Contact</Link>
                 </nav>
                 <button
@@ -34,7 +35,8 @@ export default function Header() {
             <nav className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`}>
                 <Link href="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
-                <Link href="/#services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+                <Link href="/what-we-do" onClick={() => setMobileMenuOpen(false)}>What We Do</Link>
+                <Link href="/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
                 <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             </nav>
         </header>

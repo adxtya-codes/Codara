@@ -15,7 +15,7 @@ export default function Team() {
             role: 'Backend Engineer & Manager',
             description: 'Backend engineer and operations manager focused on server-side development, API architecture, and team coordination. Ensures efficient workflows and technical excellence.',
             image: '/team/shaurya.jpg',
-            whatsapp: '918810202799',
+            whatsapp: '919711987048',
             linkedin: 'https://www.linkedin.com/in/shaurya-swami-237513304'
         },
         {
@@ -23,7 +23,7 @@ export default function Team() {
             role: 'Marketing Specialist',
             description: 'Marketing team lead handling digital strategy, client outreach, and brand positioning. Connects our technical solutions with the right audience and drives business growth.',
             image: '/team/himanshu.jpeg',
-            whatsapp: '918810202799'
+            whatsapp: '918882989995'
         }
     ];
 
