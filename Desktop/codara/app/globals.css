@@ -4954,3 +4954,26 @@ body {
 .step-card:hover .step-number {
     opacity: 0 !important;
 }
+
+/* FIX MOBILE SERVICES PILLS - FORCE PILL SHAPE */
+@media (max-width: 768px) {
+    .services-section .service-card {
+        border-radius: 9999px !important; /* Force full pill shape even on mobile */
+        padding: 24px 30px !important; 
+    }
+}
+
+/* FIX 'AT CODARA' TEXT ALIGNMENT ON MOBILE */
+@media (max-width: 768px) {
+    .hero-content {
+        padding-left: 10px !important; /* Add specific padding to content container */
+        padding-right: 10px !important;
+    }
+    
+    .hero-headline {
+        margin-left: 0 !important;
+        text-align: left !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
