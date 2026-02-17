@@ -5064,3 +5064,23 @@ body {
         align-items: flex-start !important; /* Align children to left initially */
     }
 }
+
+/* FIX MOBILE HERO HEADLINE - LEFT ALIGN ONLY */
+@media (max-width: 768px) {
+    .hero-headline {
+        text-align: left !important; /* Force left alignment as requested */
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+        /* Ensure size is large enough but fits */
+        font-size: 42px !important; 
+        line-height: 1.1 !important;
+    }
+    
+    .hero-container {
+        align-items: flex-start !important; /* Align children to start (left) */
+        padding: 0 24px !important;
+    }
+
+    /* Do NOT touch .hero-description to avoid previous conflicts */
+}
