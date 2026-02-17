@@ -4977,3 +4977,31 @@ body {
         box-sizing: border-box !important;
     }
 }
+
+/* FIX MOBILE SERVICES PILLS - REVERT TO ROUNDED RECTANGLE */
+@media (max-width: 768px) {
+    .services-section .service-card {
+        border-radius: 30px !important; /* Reverted to rounded rectangle, pleasing look */
+        padding: 24px 30px !important; 
+    }
+}
+
+/* FIX 'AT CODARA' TEXT ALIGNMENT - PREVENT CUTOFF */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 0 0 !important; /* Reset section padding */
+    }
+
+    .hero-container {
+        padding: 0 24px !important; /* Add safe padding to container */
+        width: 100% !important;
+        box-sizing: border-box !important; /* Ensure padding doesn't cause overflow */
+    }
+    
+    .hero-headline {
+        margin-left: 0 !important;
+        text-align: left !important;
+        width: 100% !important;
+        padding-right: 10px !important; /* Prevent right edge cutoff too */
+    }
+}
