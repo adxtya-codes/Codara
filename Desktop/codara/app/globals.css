@@ -2808,3 +2808,17 @@ body {
         transform: translateY(0);
     }
 }
+
+/* Subtle floating animation for hero image */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.hero-image img {
+    animation: float 4s ease-in-out infinite;
+}
