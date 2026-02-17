@@ -2579,3 +2579,18 @@ body {
         font-size: 32px !important;
     }
 }
+
+/* Hide "Services that count" label on mobile homepage */
+@media (max-width: 768px) {
+    .process-label {
+        display: none !important;
+    }
+}
+
+/* Improve visibility of any services label on About page */
+.team-section .process-label,
+.about-hero .process-label {
+    color: #000000 !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}
