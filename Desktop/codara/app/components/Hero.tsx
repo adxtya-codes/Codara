@@ -20,9 +20,7 @@ export default function Hero() {
                     </p>
 
                     <a
-                        href="https://cal.com/codara"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="tel:+918810202799"
                         className="cta-button"
                     >
                         Book a Free Strategy Call

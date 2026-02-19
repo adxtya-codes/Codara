@@ -275,7 +275,7 @@ export default function Pricing() {
                     <div className="pricing-cta-section">
                         <h2>Ready to get started?</h2>
                         <p>Contact us for a quick demo and see how our systems work for real estate enquiries</p>
-                        <a href="https://cal.com/codara" target="_blank" rel="noopener noreferrer" className="main-cta-button">Book a Free Strategy Call</a>
+                        <a href="tel:+918810202799" className="main-cta-button">Book a Free Strategy Call</a>
                     </div>
                 </div>
             </section>
