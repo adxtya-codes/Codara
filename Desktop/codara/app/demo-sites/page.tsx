@@ -31,7 +31,7 @@ export default function DemoSites() {
                 <div className="demo-container">
                     <div className="demo-product-card">
                         <div className="demo-product-content">
-                            <h2 className="demo-product-title">Car Dealership Website System</h2>
+                            <h2 className="demo-product-title">Car Dealership Website Example</h2>
 
                             <div className="demo-features-grid">
                                 <div className="demo-feature-column">
@@ -56,11 +56,6 @@ export default function DemoSites() {
                                     </ul>
                                 </div>
                             </div>
-
-                            <div className="demo-product-actions">
-                                <a href="https://cardemo-codara.vercel.app/" target="_blank" rel="noopener noreferrer" className="demo-btn-primary">View Live Demo</a>
-                                <a href="tel:+918810202799" className="demo-btn-secondary">Enquire About This Website</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,7 +66,7 @@ export default function DemoSites() {
                 <div className="demo-container">
                     <div className="demo-product-card">
                         <div className="demo-product-content">
-                            <h2 className="demo-product-title">Tuition Centre Website System</h2>
+                            <h2 className="demo-product-title">Tuition Centre Website Example</h2>
 
                             <div className="demo-features-grid">
                                 <div className="demo-feature-column">
@@ -96,11 +91,6 @@ export default function DemoSites() {
                                         <li>Mobile responsive layout</li>
                                     </ul>
                                 </div>
-                            </div>
-
-                            <div className="demo-product-actions">
-                                <a href="https://tuition-demo.vercel.app/" target="_blank" rel="noopener noreferrer" className="demo-btn-primary">View Live Demo</a>
-                                <a href="tel:+918810202799" className="demo-btn-secondary">Enquire About This Website</a>
                             </div>
                         </div>
                     </div>
