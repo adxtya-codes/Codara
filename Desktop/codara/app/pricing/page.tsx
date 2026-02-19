@@ -187,7 +187,14 @@ export default function Pricing() {
 
                                 <div className="combo-features-grid">
                                     <div className="combo-feature-column">
-                                        <h4>💻 Professional Website</h4>
+                                        <h4>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                                            </svg>
+                                            Professional Website
+                                        </h4>
                                         <ul>
                                             <li>✔ Modern responsive design</li>
                                             <li>✔ Structured layout for credibility</li>
@@ -196,7 +203,17 @@ export default function Pricing() {
                                         </ul>
                                     </div>
                                     <div className="combo-feature-column">
-                                        <h4>🤖 WhatsApp Automation Bot</h4>
+                                        <h4>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <rect x="1" y="1" width="22" height="22" rx="2" ry="2"></rect>
+                                                <path d="M9 9h6v6H9z"></path>
+                                                <path d="M9 1h6"></path>
+                                                <path d="M9 23h6"></path>
+                                                <path d="M1 9h22"></path>
+                                                <path d="M1 15h22"></path>
+                                            </svg>
+                                            WhatsApp Automation Bot
+                                        </h4>
                                         <ul>
                                             <li>✔ Instant auto-replies</li>
                                             <li>✔ Structured conversation flow</li>
@@ -205,7 +222,14 @@ export default function Pricing() {
                                         </ul>
                                     </div>
                                     <div className="combo-feature-column">
-                                        <h4>🌐 Hosting & Maintenance Included</h4>
+                                        <h4>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                            </svg>
+                                            Hosting & Maintenance Included
+                                        </h4>
                                         <ul>
                                             <li>✔ Secure hosting</li>
                                             <li>✔ Regular updates</li>

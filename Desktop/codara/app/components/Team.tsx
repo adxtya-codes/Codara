@@ -13,7 +13,7 @@ export default function Team() {
             image: '/team/aditya.jpeg',
             whatsapp: '918810202799',
             linkedin: 'https://www.linkedin.com/in/aditya-singh-41a895349/',
-            website: 'https://www.aditya.vercel.app'
+            website: 'https://adxtya.vercel.app/'
         },
         {
             name: 'Shaurya',
