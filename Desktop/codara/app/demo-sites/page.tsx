@@ -19,8 +19,6 @@ export default function DemoSites() {
                         Professionally designed websites tailored for real businesses. Fully customisable to match your brand, goals, and vision.
                     </p>
                     <div className="demo-hero-buttons">
-                        <a href="https://cardemo-codara.vercel.app/" target="_blank" rel="noopener noreferrer" className="demo-btn-primary">View Car Dealership Demo</a>
-                        <a href="https://tuition-demo.vercel.app/" target="_blank" rel="noopener noreferrer" className="demo-btn-primary">View Tuition Centre Demo</a>
                         <a href="tel:+918810202799" className="demo-btn-outline">Request Custom Website</a>
                     </div>
                 </div>
@@ -55,6 +53,11 @@ export default function DemoSites() {
                                         <li>SEO-ready structure</li>
                                     </ul>
                                 </div>
+                            </div>
+
+                            <div className="demo-product-actions">
+                                <a href="https://cardemo-codara.vercel.app/" target="_blank" rel="noopener noreferrer" className="demo-btn-primary">View Live Demo</a>
+                                <a href="tel:+918810202799" className="demo-btn-secondary">Enquire About This Website</a>
                             </div>
                         </div>
                     </div>
@@ -91,6 +94,11 @@ export default function DemoSites() {
                                         <li>Mobile responsive layout</li>
                                     </ul>
                                 </div>
+                            </div>
+
+                            <div className="demo-product-actions">
+                                <a href="https://tuition-demo.vercel.app/" target="_blank" rel="noopener noreferrer" className="demo-btn-primary">View Live Demo</a>
+                                <a href="tel:+918810202799" className="demo-btn-secondary">Enquire About This Website</a>
                             </div>
                         </div>
                     </div>
