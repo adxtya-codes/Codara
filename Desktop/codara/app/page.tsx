@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import ProcessSteps from './components/ProcessSteps';
+import PricingPreview from './components/PricingPreview';
 import Services from './components/Services';
 import FAQ from './components/FAQ';
 import Testimonials from './components/Testimonials';
@@ -16,6 +17,7 @@ export default function Home() {
             <Services />
             <Projects />
             <ProcessSteps />
+            <PricingPreview />
             <Testimonials />
             <FAQ />
             <Contact />
