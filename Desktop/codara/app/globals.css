@@ -184,8 +184,8 @@ body {
 }
 
 .about-hero {
-    padding: 180px 60px 20px;
-    /* Reduced bottom padding from likely higher value */
+    padding: 140px 60px 0px;
+    /* Removed bottom padding completely */
     background: #000000;
     position: relative;
     overflow: hidden;
@@ -204,8 +204,12 @@ body {
 
 .team-section {
     padding: 0px 60px 100px;
-    /* Reduced top padding from likely higher value */
-    background: #000000;
+    margin-top: -40px;
+    /* Negative margin to pull it up */
+    background: transparent;
+    /* Use transparent to avoid masking */
+    position: relative;
+    z-index: 10;
 }
 
 .hero-container {
