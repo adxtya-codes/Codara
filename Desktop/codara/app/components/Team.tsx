@@ -8,29 +8,26 @@ export default function Team() {
     const teamMembers = [
         {
             name: 'Aditya',
-            role: 'Backend Engineer & Strategist',
+            role: 'Founder & Tech Lead',
             description: 'Backend engineer and project manager specializing in scalable architecture, system design, and strategic planning. Drives technical vision and ensures seamless project execution.',
             image: '/team/aditya.jpeg',
-            hoverImage: '/team/aditya-hover.png',
             whatsapp: '918810202799',
             linkedin: 'https://www.linkedin.com/in/aditya-singh-41a895349/',
             website: 'https://adxtya.vercel.app/'
         },
         {
             name: 'Shaurya',
-            role: 'Backend Engineer & Manager',
-            description: 'Backend engineer and operations manager focused on server-side development, API architecture, and team coordination. Ensures efficient workflows and technical excellence.',
+            role: 'Co-Founder & Product Lead',
+            description: 'Frontend specialist and product strategist focused on crafting intuitive user experiences and efficient interfaces. Bridges the gap between design and functionality.',
             image: '/team/shaurya.jpg',
-            hoverImage: '/team/shaurya-hover.png',
-            whatsapp: '919711987048',
-            linkedin: 'https://www.linkedin.com/in/shaurya-swami-237513304'
+            whatsapp: '919582572626',
+            linkedin: 'https://www.linkedin.com/in/shaurya-s-b42564263/'
         },
         {
             name: 'Himanshu',
-            role: 'Marketing Specialist',
-            description: 'Marketing team lead handling digital strategy, client outreach, and brand positioning. Connects our technical solutions with the right audience and drives business growth.',
+            role: 'Founding Engineer',
+            description: 'Full-stack developer with expertise in rapid prototyping and end-to-end application development. Turns complex requirements into robust, deployable solutions.',
             image: '/team/himanshu.jpeg',
-            hoverImage: '/team/himanshu-hover.png',
             whatsapp: '918882989995'
         }
     ];
@@ -58,21 +55,10 @@ export default function Team() {
                                 <Image
                                     src={member.image}
                                     alt={member.name}
-                                    fill
-                                    className="team-image team-image-default"
-                                    sizes="(max-width: 768px) 100vw, 33vw"
+                                    width={300}
+                                    height={300}
+                                    className="team-image"
                                 />
-                                {/* @ts-ignore */}
-                                {member.hoverImage && (
-                                    <Image
-                                        // @ts-ignore
-                                        src={member.hoverImage}
-                                        alt={`${member.name} hover`}
-                                        fill
-                                        className="team-image team-image-hover"
-                                        sizes="(max-width: 768px) 100vw, 33vw"
-                                    />
-                                )}
                             </div>
                             <h3 className="team-name">{member.name}</h3>
                             <p className="team-role">{member.role}</p>

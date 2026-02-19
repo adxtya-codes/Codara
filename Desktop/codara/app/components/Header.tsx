@@ -21,6 +21,7 @@ export default function Header() {
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
                     <Link href="/what-we-do" className="nav-link">What We Do</Link>
+                    <Link href="/demo-sites" className="nav-link">Demos</Link>
                     <Link href="/pricing" className="nav-link">Pricing</Link>
                     <Link href="/#contact">Contact</Link>
                 </nav>
@@ -36,6 +37,7 @@ export default function Header() {
                 <Link href="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
                 <Link href="/what-we-do" onClick={() => setMobileMenuOpen(false)}>What We Do</Link>
+                <Link href="/demo-sites" onClick={() => setMobileMenuOpen(false)}>Demos</Link>
                 <Link href="/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
                 <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             </nav>
