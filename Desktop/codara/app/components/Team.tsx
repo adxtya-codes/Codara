@@ -11,6 +11,7 @@ export default function Team() {
             role: 'Backend Engineer & Strategist',
             description: 'Backend engineer and project manager specializing in scalable architecture, system design, and strategic planning. Drives technical vision and ensures seamless project execution.',
             image: '/team/aditya.jpeg',
+            hoverImage: '/team/aditya-hover.png',
             whatsapp: '918810202799',
             linkedin: 'https://www.linkedin.com/in/aditya-singh-41a895349/',
             website: 'https://adxtya.vercel.app/'
@@ -20,6 +21,7 @@ export default function Team() {
             role: 'Backend Engineer & Manager',
             description: 'Backend engineer and operations manager focused on server-side development, API architecture, and team coordination. Ensures efficient workflows and technical excellence.',
             image: '/team/shaurya.jpg',
+            hoverImage: '/team/shaurya-hover.png',
             whatsapp: '919711987048',
             linkedin: 'https://www.linkedin.com/in/shaurya-swami-237513304'
         },
@@ -28,6 +30,7 @@ export default function Team() {
             role: 'Marketing Specialist',
             description: 'Marketing team lead handling digital strategy, client outreach, and brand positioning. Connects our technical solutions with the right audience and drives business growth.',
             image: '/team/himanshu.jpeg',
+            hoverImage: '/team/himanshu-hover.png',
             whatsapp: '918882989995'
         }
     ];
@@ -55,10 +58,21 @@ export default function Team() {
                                 <Image
                                     src={member.image}
                                     alt={member.name}
-                                    width={300}
-                                    height={300}
-                                    className="team-image"
+                                    fill
+                                    className="team-image team-image-default"
+                                    sizes="(max-width: 768px) 100vw, 33vw"
                                 />
+                                {/* @ts-ignore */}
+                                {member.hoverImage && (
+                                    <Image
+                                        // @ts-ignore
+                                        src={member.hoverImage}
+                                        alt={`${member.name} hover`}
+                                        fill
+                                        className="team-image team-image-hover"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                )}
                             </div>
                             <h3 className="team-name">{member.name}</h3>
                             <p className="team-role">{member.role}</p>

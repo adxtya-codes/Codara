@@ -6150,3 +6150,25 @@ body {
         transform: translateY(-5px);
     }
 }
+/* Team Hover Effect */
+.team-card .team-image-default {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.team-card:hover .team-image-default {
+    opacity: 0;
+}
+
+.team-card .team-image-hover {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.team-card:hover .team-image-hover {
+    opacity: 1;
+}
+
